@@ -10,7 +10,7 @@ function formatMessage(message, maxLength){
 
     // }
     if(message.lenght > maxLength){
-        return                                                                                                      message.slice(0 , maxLength) + "...";
+        return message.slice(0 , maxLength) + "...";
     }
     else{
         return message;
