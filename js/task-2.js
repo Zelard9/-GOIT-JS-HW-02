@@ -1,20 +1,9 @@
-function formatMessage(message, maxLength){
-    
-    // if(message.lenght <= maxLength){
-    //     return message;
-    // }
-   
-    // else{
-    //     return message.slice(0 , maxLength) + "...";
-
-
-    // }
-    if(message.lenght > maxLength){
-        return message.slice(0 , maxLength) + "...";
-    }
-    else{
-        return message;
-    }
+function formatMessage(message, maxLength) {
+  if (message.length > maxLength) {
+    return message.slice(0, maxLength) + "...";
+  } else {
+    return message;
+  }
 }
 console.log(formatMessage("Curabitur ligula sapien", 16)); // "Curabitur ligula..."
 console.log(formatMessage("Curabitur ligula sapien", 23)); // "Curabitur ligula sapien"
